@@ -12,14 +12,14 @@
 -----------
 -----------
 
-#KAFKA:
+# KAFKA:
 #
 #Please find screenshots in Kafka folder
 
 -----
 -----
 
-#SQOOP TASK.
+# SQOOP TASK.
 
 #Optional task in the sqoop directory 
 
@@ -33,4 +33,4 @@
 #sqoop_tmpXX-00.png	
 #sqoop_tmpXX-01.png
 
-# note the dates it table are a little bit different from task, because I was experimenting, trying to add NULL value in one row.
+#note the dates in table are a little bit different from task, because I was experimenting, trying to add NULL value in one row.

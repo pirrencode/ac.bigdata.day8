@@ -1,5 +1,5 @@
 # ac.bigdata.day8
-#FLUME:
+# FLUME:
 #Checkpoint
 #Data
 #flume.conf
