@@ -1,0 +1,9 @@
+import
+--connect
+jdbc:mysql://localhost:3306/sqoop_student_XX
+--table
+users_XX
+--username 
+root
+--password
+cloudera

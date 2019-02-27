@@ -1,0 +1,59 @@
+Step1. First of all I create options_file.txt in my ac.bigdata.day8 folder
+Step 2.  Contents of the file:
+Passing import connect, table, username and password through it.
+
+import
+--connect
+jdbc:mysql://localhost:3306/sqoop_student_XX
+--table
+users_XX
+--username 
+root
+--password
+cloudera
+
+3. Making query:
+sqoop --options-file /home/cloudera/projects/ac.bigdata.day8/sqoop/options_file.txt --target-dir /tmp_XX/06 -m 1
+
+It works!
+
+19/02/27 05:34:31 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=171150
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=87
+		HDFS: Number of bytes written=220
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Other local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=34409
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=34409
+		Total vcore-milliseconds taken by all map tasks=34409
+		Total megabyte-milliseconds taken by all map tasks=35234816
+	Map-Reduce Framework
+		Map input records=12
+		Map output records=12
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=741
+		CPU time spent (ms)=2110
+		Physical memory (bytes) snapshot=123838464
+		Virtual memory (bytes) snapshot=1510195200
+		Total committed heap usage (bytes)=60751872
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=220
+19/02/27 05:34:31 INFO mapreduce.ImportJobBase: Transferred 220 bytes in 80.5099 seconds (2.7326 bytes/sec)
+19/02/27 05:34:31 INFO mapreduce.ImportJobBase: Retrieved 12 records.
+
+

@@ -1,0 +1,17 @@
+Step1. First of all I create options_file.txt in my ac.bigdata.day8 folder
+Step 2.  Contents of the file:
+Passing import connect, table, username and password through it.
+
+import
+--connect
+jdbc:mysql://localhost:3306/sqoop_student_XX
+--table
+users_XX
+--username 
+root
+--password
+cloudera
+
+3. Making query:
+sqoop --options-file /home/cloudera/projects/ac.bigdata.day8/sqoop/options_file.txt --target-dir /tmp_XX/06 -m 1
+
